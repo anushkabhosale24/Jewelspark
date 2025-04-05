@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Card</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+            transition: 0.3s;
+            position: relative;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffcc00;
+            color: #000;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .trending { background-color: #cf9eb7; }
+        .latest { background-color: #ffbcf2; }
+        .bestseller { background-color: #cf9eb7; }
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+        }
+        .delivery {
+            color: #d500f9;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .delivery:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <h1 style="background-color: white;text-align: center;font-family:'Courier New', Courier, monospace;">EARRINGS</h1>
+</head>
+<body>
+
+<div class="container mt-5" style="display: flex; justify-content: space-around;">
+   
+            <div class="product-card">
+                <span class="product-tag trending">TRENDING</span>
+                <img src="https://www.palmonas.com/cdn/shop/files/ER-117-4.jpg?v=1738403151&width=900">
+                <p class="price">₹2,346</p>
+                <p class="old-price">₹3,351</p>
+                <a href="#" class="delivery">Typically arrives in 3-4 Days</a>
+                <p>Emerald Hoop Earrings</p>
+            </div>
+
+            <div class="product-card">
+                <span class="product-tag trending">TRENDING</span>
+                <img src="https://www.palmonas.com/cdn/shop/products/01_f9a588ac-4ec8-49ab-b4e7-b1e24d1c7386.jpg?v=1717571338&width=900" alt="Product Image">
+                <p class="price">₹ 1,899</p>
+                <p class="old-price">₹4,454</p>
+                <a href="#" class="delivery">Typically arrives in 3-4 Days</a>
+                <p>Triangle Shape Hoop Earrings</p>
+            </div>
+
+            <div class="product-card">
+                <span class="product-tag trending">LATEST</span>
+                <img src="https://www.palmonas.com/cdn/shop/products/03_601dad05-6ac5-4127-88c7-daab4b0f75d3.jpg?v=1738322292" alt="Product Image">
+                <p class="price">₹ 1,899</p>
+                <p class="old-price">₹3,380</p>
+                <a href="#" class="delivery">Typically arrives in 3-4 Days</a>
+                <p>Stones Sparkle Dangle Earrings</p>
+            </div>
+
+            <div class="product-card">
+                <span class="product-tag trending">LATEST</span>
+                <img src="https://www.palmonas.com/cdn/shop/files/PM-EARRINGS-032_3_0040.jpg?v=1738655020&width=900" alt="Product Image">
+                <p class="price">₹2,258</p>
+                <p class="old-price">₹3,226</p>
+                <a href="#" class="delivery">Typically arrives in 3-4 Days</a>
+                <p>Athena Solitaire Hoop Earrings</p>
+            </div>
+       
+</div>
+
+
+
+   
+</div>
+
+<div id="carouselExample" class="carousel slide" style="margin-top: 3%;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.giva.co/cdn/shop/files/collection_banner-web_Earrings-min_9d5fcee4-3b16-4f4d-b2a2-a814cc11a586.jpg?v=1742627047&width=1780" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpaperaccess.com/full/3372702.jpg" class="d-block w-100" alt="...">
+      </div>
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+       
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
